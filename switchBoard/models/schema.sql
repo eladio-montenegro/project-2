@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS todo;
-CREATE DATABASE todo;
-
-DROP DATABASE IF EXISTS shopping;
-CREATE DATABASE shopping;
+-- Drops the blogger if it exists currently --
+DROP DATABASE IF EXISTS switchboard;
+-- Creates the "blogger" database --
+CREATE DATABASE switchboard;
