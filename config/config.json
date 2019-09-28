@@ -6,5 +6,21 @@
     "host": "alv4v3hlsipxnujn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
+  },
+  "test": {
+    "username": "i1ixgu1g5708jrqw",
+    "password": "cdrx40rbajhcvq1m",
+    "database": "b8ny99yu9i50snuu",
+    "host": "alv4v3hlsipxnujn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "i1ixgu1g5708jrqw",
+    "password": "cdrx40rbajhcvq1m",
+    "database": "b8ny99yu9i50snuu",
+    "host": "alv4v3hlsipxnujn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "dialect": "mysql"
   }
 }
