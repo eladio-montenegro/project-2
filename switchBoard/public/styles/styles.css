@@ -1,3 +1,40 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+head
+
+
+.list-group-item {
+  line-height: 2.5;
+}
+
+h1{
+  text-align: center;
+  font-size: 1.5em;
+
+
+}
+
+body {
+background-color: #4fd1c5;
+margin:20px;
+
+}
+
+#recipeResults {
+	margin:0;
+	padding:0;
+}
+
+.date { 
+	color:#666;
+}
+
+img {
+  opacity: 0.4;
+  padding: 7px; 
+}
+img:hover {
+	opacity: 1;
+}
