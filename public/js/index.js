@@ -126,12 +126,15 @@ function generateThumbnailFor(recipe) {
   var imageUrl = recipe.imageUrlsBySize[90];
   var title = recipe.sourceDisplayName;
   var id = recipe.id;
+
+
   var imageTag = "<img src='" + imageUrl + "'>";
   var yumUrl = "https://www.yummly.com/recipe/" + id + "";
+
   var recipeThumbnail =
     "<div class='col-sm-6 col-md-4'><div class='thumbnail'>" +
     imageTag +
-    "<div class='caption'><a href='" +
+    "<div class='caption'><a target='_blank' href='" +
     yumUrl +
     "'><h4>" +
     title +
