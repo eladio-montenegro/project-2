@@ -1,7 +1,7 @@
 <div id="home">
   <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
+    <div>
+      <div>
         {{!-- <h1>{{'SwitchBoard'}}</h1> --}}
         <h1>SwitchBoard</h1>
         <form class="clearfix mb-4" action="POST">
@@ -15,8 +15,9 @@
           </div> --}}
           <button id="search" class="btn btn-primary">Search</button>
         </form>
+      </div>
         <h3>Examples:</h3>
-        <div id="recipeResults" class="row">
+        <div id="recipeResults">
           {{#each examples}}
           <div data-id="{{this.id}}" class="list-group-item">
             <a href="example/{{this.id}}">{{this.text}}</a>
@@ -24,10 +25,11 @@
           </div>
           {{/each}}
         </div>
-      </div>
+        <div class="calendar-wrapper">
       <iframe
     src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=cHNhNTdzaG05ZXFxb281bGRycGZmMnBhaDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F4511E&amp;color=%230B8043&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
     style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
     </div>
   </div>
 </div>

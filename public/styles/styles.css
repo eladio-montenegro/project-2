@@ -27,9 +27,9 @@ margin:20px;
 	margin:0;
   padding:0;
   color: black;
-  text-align: left;
-   float: left; 
-  width: 50%
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
 }
 
 .date { 
@@ -51,7 +51,7 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 1.28rem !important;
   color: black;
   font-family: 'Montserrat Alternates', sans-serif;
 
@@ -59,7 +59,12 @@ h4 {
 
 
 .thumbnail {
-
+  width:175px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #userKeyword {
@@ -75,4 +80,9 @@ h4 {
 .list-group {
   color: black;
   text-align: left;
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
 }

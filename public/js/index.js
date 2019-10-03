@@ -132,13 +132,13 @@ function generateThumbnailFor(recipe) {
   var yumUrl = "https://www.yummly.com/recipe/" + id + "";
 
   var recipeThumbnail =
-    "<div class='col-sm-6 col-md-4'><div class='thumbnail'>" +
+    "<div class='thumbnail'>" +
     imageTag +
-    "<div class='caption'><a target='_blank' href='" +
+    "<a target='_blank' href='" +
     yumUrl +
     "'><h4>" +
     title +
-    "</h4></a></div></div></div>";
+    "</h4></a></div>";
   $("#recipeResults").append(recipeThumbnail);
 }
 
