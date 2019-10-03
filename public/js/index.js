@@ -132,13 +132,13 @@ function generateThumbnailFor(recipe) {
   var yumUrl = "https://www.yummly.com/recipe/" + id + "";
 
   var recipeThumbnail =
-    "<div class='col-sm-6 col-md-4'><div class='thumbnail'>" +
+    "<div class='thumbnail'>" +
     imageTag +
-    "<div class='caption'><a target='_blank' href='" +
+    "<a target='_blank' href='" +
     yumUrl +
     "'><h4>" +
     title +
-    "</h4></a></div></div></div>";
+    "</h4></a></div>";
   $("#recipeResults").append(recipeThumbnail);
 }
 
@@ -154,7 +154,3 @@ function displayRecipes() {
   });
 }
 //http://api.yummly.com/v1/api/recipe/French-Onion-Soup-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41364?_app_id=e117b611&_app_key=41a3c4bb5d793a1d5733392e96218eab
-
-// function hideRecipes() {
-//   if keyword
-// }
