@@ -1,22 +1,23 @@
+
+
 <div id="home">
+ <main>
+    <div class="header-img">
+</main> 
   <div class="container">
     <div>
       <div>
-        {{!-- <h1>{{'SwitchBoard'}}</h1> --}}
-        <h1>SwitchBoard</h1>
+         <h1>SwitchBoard</h1> 
+         </div>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Find Recpies</label>
             <input type="text" id="userKeyword" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
           </div>
-          {{!-- <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div> --}}
           <button id="search" class="btn btn-primary">Search</button>
         </form>
       </div>
-        <h3>Examples:</h3>
+        <h3>Recipes:</h3>
         <div id="recipeResults">
           {{#each examples}}
           <div data-id="{{this.id}}" class="list-group-item">
@@ -42,6 +43,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Bitter|Bree+Serif|Fjalla+One|Roboto+Slab&display=swap" rel="stylesheet">
+
 
 
 <script src="/js/index.js"></script>
