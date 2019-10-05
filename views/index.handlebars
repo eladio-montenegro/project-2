@@ -21,7 +21,7 @@
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Find Recpies</label>
-            <input type="text" id="userKeyword" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <input type="text" id="userKeyword" class="form-control" aria-describedby="example-text" placeholder="Search by Ingredient or Food Type">
           </div>
           <button id="search" class="btn btn-primary">Search</button>
         </form>
@@ -35,6 +35,8 @@
           </div>
           {{/each}}
         </div>
+
+        <h3>Family Calendar</h3>
         <div class="calendar-wrapper">
       <iframe
     src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=cHNhNTdzaG05ZXFxb281bGRycGZmMnBhaDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F4511E&amp;color=%230B8043&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
@@ -42,6 +44,34 @@
     </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1>{{msg}}</h1>
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <label for="example-text">Add a To-do</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Your To-Do">
+          </div>
+          <div class="form-group">
+            <label for="example-description">To-do Description</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter a Description"></textarea>
+          </div>
+          <button id="submit" class="btn btn-primary float-right">Submit</button>
+        </form>
+        <h3>To-Dos:</h3>
+        <ul id="example-list" class="list-group">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
