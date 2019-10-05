@@ -70,7 +70,7 @@ var handleFormSubmit = function(event) {
   };
 
   if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+    alert("You gotta enter a description!");
     return;
   }
 
@@ -137,7 +137,7 @@ function generateThumbnailFor(recipe) {
     "<a target='_blank' href='" +
     yumUrl +
     "'><h4>" +
-    title +
+    id +
     "</h4></a></div>";
   $("#recipeResults").append(recipeThumbnail);
 }

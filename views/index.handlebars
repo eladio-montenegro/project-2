@@ -9,45 +9,17 @@
       
          <h1 className="headingText">SwitchBoard</h1> 
          <h2>One stop for all family needs</h2>
-           <h5>1. Search Recipes for the family<br>
-             2. Create a To-do list to stay on track <br>
-             3. Add events and recipes to the calendar.
+           <h5>1. Create a to-do list to stay on track<br>
+             2. See upcoming events on the calendar <br>
+             3. Search for diner ideas
            </h5>
          
          </main>
-  <div class="container">
-    <div>
-      
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Find Recpies</label>
-            <input type="text" id="userKeyword" class="form-control" aria-describedby="example-text" placeholder="Search by Ingredient or Food Type">
-          </div>
-          <button id="search" class="btn btn-primary">Search</button>
-        </form>
-      </div>
-        <h3>Recipes:</h3>
-        <div id="recipeResults">
-          {{#each examples}}
-          <div data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger">ｘ</button>
-          </div>
-          {{/each}}
-        </div>
 
-        <h3>Family Calendar</h3>
-        <div class="calendar-wrapper">
-      <iframe
-    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=cHNhNTdzaG05ZXFxb281bGRycGZmMnBhaDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F4511E&amp;color=%230B8043&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
-    style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-    </div>
-  </div>
-  <div class="container">
+         <div class="container">
     <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
+      <div class="col-8">
+        <h3>{{msg}}</h3>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Add a To-do</label>
@@ -71,6 +43,41 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div>
+
+
+        <h3>Family Calendar</h3>
+        <div class="calendar-wrapper">
+      <iframe
+    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=cHNhNTdzaG05ZXFxb281bGRycGZmMnBhaDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F4511E&amp;color=%230B8043&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
+    style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    </div>
+  </div>
+  
+  </div>
+
+  <div class="container">
+    <div>
+      
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <h3>What Are We in the Mood For?</h3>
+            <input type="text" id="userKeyword" class="form-control" aria-describedby="example-text" placeholder="Search by Ingredient or Food Type">
+          </div>
+          <button id="search" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+        <h3>Recipes:</h3>
+        <div id="recipeResults">
+          {{#each examples}}
+          <div data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger">ｘ</button>
+          </div>
+          {{/each}}
+        </div>
 
 </div>
 
