@@ -5,7 +5,7 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
-        msg: "This is your to-do list!",
+        msg: "Let's Get a List Going!",
         examples: dbExamples
       });
     });
