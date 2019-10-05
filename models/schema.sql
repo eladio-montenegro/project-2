@@ -1,4 +1,5 @@
--- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS switchboard;
--- Creates the "blogger" database --
-CREATE DATABASE switchboard;
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
+
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
